@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/knsv/crib/issues"
   },
-  "homepage": "https://github.com/knsv/crib#readme"
+  "homepage": "https://github.com/knsv/crib#readme",
+  "dependencies": {
+    "crib-mq": "git+https://github.com/knsv/crib-mq.git"
+  }
 }
