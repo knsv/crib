@@ -1,11 +1,19 @@
 {
   "name": "thecrib",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Home service bases automation system for robustness, scalability and easy additions. Just starting.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "GPL"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knsv/crib.git"
+  },
+  "author": "Knut Sveidqvist",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/knsv/crib/issues"
+  },
+  "homepage": "https://github.com/knsv/crib#readme"
 }
