@@ -21,7 +21,9 @@ module.exports.start = function(conf){
                 script: 'node_modules/' + plugin + '/src/index.js',         // Script to be run
                 exec_mode: 'cluster',        // Allow your app to be clustered
                 instances: 1,                // Optional: Scale your app by 4
-                max_memory_restart: '100M'   // Optional: Restart your app if it reaches 100Mo
+                name: plugin,
+                max_memory_restart: '100M',   // Optional: Restart your app if it reaches 100Mo
+                log_file: "logs/"+plugin+".log",
             }, function (err, apps) {
                 console.log(err);
                 pm2.disconnect();
