@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/knsv/crib#readme",
   "dependencies": {
-    "crib-mq": "git+https://github.com/knsv/crib-mq.git"
+    "crib-mq": "git+https://github.com/knsv/crib-mq.git",
+    "crib-scheduler": "git+https://github.com/knsv/crib-scheduler.git"
   }
 }
