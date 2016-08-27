@@ -1,7 +1,7 @@
 /**
  * Created by knut on 2016-04-17.
  */
-var crib = require('./src/index.js');
+var crib = require('./index.js');
 
 module.exports.start = function(conf) {
     var fs = require('fs');
