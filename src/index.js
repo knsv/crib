@@ -24,10 +24,29 @@ module.exports.start = function(conf){
                 name: plugin,
                 max_memory_restart: '100M',   // Optional: Restart your app if it reaches 100Mo
                 log_file: "logs/"+plugin+".log",
+                env: {
+                    "CRIB_BUSS_URL": process.env.CRIB_BUSS_URL,
+                    "CRIB_LOGGLY_TOKEN": process.env.CRIB_LOGGLY_TOKEN,
+                    "CRIB_LOGGLY_DOMAIN": process.env.CRIB_LOGGLY_DOMAIN
+                }
             }, function (err, apps) {
                 console.log(err);
                 pm2.disconnect();
             });
+            console.log('Started ',plugin);
         });
+
+        // console.log('Starting crib-ui');
+        // pm2.start({
+        //     script: '../crib-ui/src/index.js',         // Script to be run
+        //     exec_mode: 'cluster',        // Allow your app to be clustered
+        //     instances: 1,                // Optional: Scale your app by 4
+        //     name: 'crib-ui',
+        //     max_memory_restart: '100M',   // Optional: Restart your app if it reaches 100Mo
+        //     log_file: "logs/crib-ui.log",
+        // }, function (err, apps) {
+        //     console.log(err);
+        //     pm2.disconnect();
+        // });
     });
-}
+};

@@ -2,7 +2,7 @@
   "name": "thecrib",
   "version": "0.1.0",
   "description": "Home service bases automation system for robustness, scalability and easy additions. Just starting.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/knsv/crib#readme",
   "dependencies": {
-    "crib-mq": "git+https://github.com/knsv/crib-mq.git",
-    "crib-scheduler": "git+https://github.com/knsv/crib-scheduler.git",
     "pm2": "^1.1.2"
   }
 }
