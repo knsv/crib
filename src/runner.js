@@ -20,6 +20,8 @@ module.exports.start = function(conf) {
 
     var modulesPath = path.join(cribHome, 'crib_modules');
 
+    conf.modulesPath = modulesPath;
+
     var files = fs.readdirSync(modulesPath);
 
     if (files.indexOf('crib-mq') < 0) {
