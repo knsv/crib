@@ -1,8 +1,8 @@
 {
-  "name": "thecrib",
-  "version": "0.1.0",
+  "name": "crib",
+  "version": "0.2353.0",
   "description": "Home service bases automation system for robustness, scalability and easy additions. Just starting.",
-  "main": "src/index.js",
+  "main": "runner.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
