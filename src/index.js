@@ -14,9 +14,9 @@ module.exports.start = function(conf){
             process.exit(2);
         }
 
-        conf.plugins.push('crib-mq');
+        // conf.plugins.push('crib-mq');
         conf.plugins.forEach(function (plugin) {
-            console.log('Starting ',conf.modulesPath + '/src/index.js');
+            console.log('Starting ',conf.modulesPath + '/'+ plugin + '/src/index.js');
             pm2.start({
                 script: conf.modulesPath + '/' + plugin + '/src/index.js',         // Script to be run
                 exec_mode: 'cluster',        // Allow your app to be clustered
