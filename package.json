@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/knsv/crib#readme",
   "dependencies": {
-    "pm2": "^1.1.2"
+    "pm2": "^3.0.0"
   }
 }
