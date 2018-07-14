@@ -31,6 +31,8 @@ module.exports.start = function(conf) {
         }
       };
 
+      console.log(opt);
+
       pm2.start(opt, function(err) {
         console.log(err);
         pm2.disconnect();
