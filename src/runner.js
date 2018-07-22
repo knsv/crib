@@ -38,7 +38,7 @@ module.exports.start = function(conf) {
   conf.plugins.push('crib-storage');
 
   files.forEach((file) => {
-    if (file !== 'crib-mq' && file !== 'crib-storage' && file !== 'crib-ui' && file !== 'crib-log' && file.match('crib-')) {
+    if (file !== 'crib-mq' && file !== 'crib-storage' && file !== 'crib-zwave' && file !== 'crib-ui' && file !== 'crib-log' && file.match('crib-')) {
       console.log('Using plugin: ', file);
       conf.plugins.push(file);
     }
